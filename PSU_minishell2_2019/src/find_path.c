@@ -59,7 +59,7 @@ int builtins(char **env, char *buffer)
     char **buf = shell_str_to_array(buffer);
     char *str_stock = format_str(buf);
     buf = shell_str_to_array(str_stock);
-    __pid_t pid = fork();
+    pid_t pid = fork();
     int wstatus;
 
     if (pid == 0){

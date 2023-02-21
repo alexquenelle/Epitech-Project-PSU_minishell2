@@ -1,7 +1,7 @@
 SRC	=	src/check.c \
 		src/create_struct.c \
 		src/find_path.c \
-		src/get_space.c src/main.c \
+		src/get_space.c \
     	src/my_strcmp.c \
 		src/my_strcmp_custom.c \
 		src/separator.c \
@@ -9,13 +9,13 @@ SRC	=	src/check.c \
     	src/setenv.c \
 		src/shell_command.c \
 		src/start_shell.c \
-		src/str_to_word_array.c
+		src/str_to_word_array.c	\
+		src/unsetenv.c
 
 LIB	=	lib/my_flag.c \
 		lib/my_printf.c \
 		lib/my_putchar.c \
 		lib/my_put_nbr.c \
-		lib/my_putstr.c \
 		lib/my_put_nbru.c \
 		lib/my_putstr.c \
 		lib/my_str_isalpha.c \

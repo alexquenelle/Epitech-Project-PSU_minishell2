@@ -70,7 +70,7 @@ void builtins_space(char **env, char **board, char **buf)
 int pipe_space(char **env, char **first_cmd, char **second_cmd, char **buf_env)
 {
     int pfd[2];
-    __pid_t pid;
+    pid_t pid;
 
     if (pipe(pfd) == -1 || (pid = fork()) < 0)
         return (0);

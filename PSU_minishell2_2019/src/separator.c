@@ -33,7 +33,7 @@ int exe_pipe(char **env, char *buffer)
     char **buf_env = shell_str_to_array(buffer);
     char *str_stock = format_str(buf_env);
     buf_env = shell_str_to_array(str_stock);
-    __pid_t avoid_exit = fork();
+    pid_t avoid_exit = fork();
     char **first_cmd = create_first_cmd(buf_env);
     char **second_cmd = create_second_cmd(buf_env);
 
